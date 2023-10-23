@@ -7,15 +7,16 @@
 
 body {
   font-family: "Press Start 2P", "Arial", sans-serif;
-  background-color: #3e3e3e;
+  background-color: #282c34;
   margin: 0;
   padding: 0;
-  color: #f4f4f4;
+  color: #abb2bf;
   font-size: 16px;
   background-image: url("bg.gif");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  line-height: 1.5;
 }
 
 /* layout */
@@ -37,38 +38,40 @@ a {
 
 /* combined class selector */
 .page-wrapper .intro {
-  background-color: #505050;
+  background-color: #3a3f4b;
   padding: 20px;
-  margin: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  border: 4px solid #6d6d6d;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 4px solid #434a56;
+  border-radius: 8px;
 }
 
 /* child selector */
 div > h3 {
-  border-bottom: 4px solid #f0db4f;
+  border-bottom: 4px solid #98c379;
   padding-bottom: 10px;
-  color: #f0db4f;
+  color: #98c379;
 }
 
 /* :nth-child() selector */
 p:nth-child(odd) {
-  background-color: #444444;
+  background-color: #3a3f4b;
   padding: 10px;
-  border: 1px dashed #666666;
+  border: 2px dashed #434a56;
+  border-radius: 4px;
 }
 
 /* :first-of-type selector */
 h1:first-of-type {
-  color: #f96735;
+  color: #e06c75;
   font-weight: bold;
 }
 
 /* attribute selector */
 a[title] {
-  color: #58a6ff;
+  color: #61afef;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 /* group selector */
@@ -76,18 +79,18 @@ h1,
 h2,
 h3 {
   margin-top: 0;
-  color: #f96735;
+  color: #e06c75;
 }
 
 /* descendant selector */
 .header p {
   font-weight: bold;
-  color: #777777;
+  color: #abb2bf;
 }
 
 /* id selector */
 #zen-summary {
-  border-top: 2px dotted #e1e1e1;
+  border-top: 2px dashed #434a56;
   padding-top: 20px;
 }
 
@@ -96,8 +99,9 @@ h3 {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: #363636;
-  border: 4px solid #6d6d6d;
+  background-color: #282c34;
+  border: 4px solid #434a56;
+  border-radius: 8px;
 }
 
 .benefits > h3 {
@@ -107,26 +111,28 @@ h3 {
 /* hover pseudo-class selector */
 a:hover {
   text-decoration: underline;
-  color: #ffd700;
-  text-shadow: 0 0 5px #fff;
+  color: #c678dd;
+  text-shadow: 0 0 8px #ffd700;
 }
 
 /* buttons */
 button,
 input[type="submit"] {
   font-family: "Press Start 2P", sans-serif;
-  background-color: #f96735;
+  background-color: #61afef;
   color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
   border: 2px solid #fff;
+  border-radius: 4px;
 }
 
 button:hover,
 input[type="submit"]:hover {
-  background-color: #ff7f50;
+  background-color: #56b6c2;
+  transform: translateY(-2px);
 }
 
 /* cursor */
