@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 /* base styles */
 * {
   box-sizing: border-box;
@@ -9,6 +11,11 @@ body {
   margin: 0;
   padding: 0;
   color: #f4f4f4;
+  font-size: 16px;
+  background-image: url("bg.gif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* layout */
@@ -25,6 +32,7 @@ h3,
 p,
 a {
   font-family: "Press Start 2P", "Arial", sans-serif;
+  line-height: 1.5em;
 }
 
 /* combined class selector */
@@ -33,12 +41,12 @@ a {
   padding: 20px;
   margin: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  border: 2px solid #6d6d6d;
+  border: 4px solid #6d6d6d;
 }
 
 /* child selector */
 div > h3 {
-  border-bottom: 2px solid #e1e1e1;
+  border-bottom: 4px solid #f0db4f;
   padding-bottom: 10px;
   color: #f0db4f;
 }
@@ -60,6 +68,7 @@ h1:first-of-type {
 a[title] {
   color: #58a6ff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 /* group selector */
@@ -85,15 +94,21 @@ h3 {
 /* class selector */
 .benefits {
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   background-color: #363636;
-  border: 2px solid #6d6d6d;
+  border: 4px solid #6d6d6d;
+}
+
+.benefits > h3 {
+  margin-top: 20px;
 }
 
 /* hover pseudo-class selector */
 a:hover {
   text-decoration: underline;
   color: #ffd700;
+  text-shadow: 0 0 5px #fff;
 }
 
 /* buttons */
@@ -105,6 +120,8 @@ input[type="submit"] {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid #fff;
 }
 
 button:hover,
