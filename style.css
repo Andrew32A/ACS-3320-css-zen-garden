@@ -140,3 +140,101 @@ body,
 a:hover {
   cursor: cell;
 }
+
+/* content info */
+div > p[role="contentinfo"] {
+  color: #6f9;
+  font-size: 0.8em;
+  margin-top: 2em;
+  border-top: 2px solid #6f9;
+  padding-top: 1em;
+}
+
+div > p[role="contentinfo"] a {
+  color: #9cf;
+  text-decoration: none;
+}
+
+div > p[role="contentinfo"] a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+footer {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #333;
+  text-align: center;
+}
+
+footer a {
+  color: #9cf;
+  margin: 0 0.5em;
+  text-decoration: none;
+  border-bottom: 1px dotted #9cf;
+}
+
+footer a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+/* sidebar */
+.sidebar {
+  background-color: #1c1c1c;
+  padding: 1em;
+}
+
+.sidebar .wrapper {
+  border: 2px solid #333;
+  padding: 1em;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  margin-bottom: 2em;
+}
+
+.sidebar h3 {
+  font-size: 1.2em;
+  color: #9cf;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.sidebar a {
+  color: #9cf;
+  text-decoration: none;
+  border-bottom: 1px dotted #9cf;
+}
+
+.sidebar a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* navigation */
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 0.5em;
+}
+
+/* design archives next button */
+li.next a {
+  font-weight: bold;
+  color: #cfc;
+}
+
+/* design selection links */
+.design-name {
+  font-weight: bold;
+}
+
+.designer-name {
+  font-style: italic;
+}
