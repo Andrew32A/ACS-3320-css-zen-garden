@@ -11,12 +11,27 @@ body {
   margin: 0;
   padding: 0;
   color: #abb2bf;
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
   font-size: 16px;
   background-image: url("bg.gif");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   line-height: 1.5;
+}
+
+/* background overlay */
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 /* layout */
@@ -38,7 +53,7 @@ a {
 
 /* combined class selector */
 .page-wrapper .intro {
-  background-color: #3a3f4b;
+  background-color: #1c1c1c;
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -55,11 +70,18 @@ div > h3 {
 
 /* :nth-child() selector */
 p:nth-child(odd) {
-  background-color: #3a3f4b;
+  background-color: #1c1c1c;
   padding: 10px;
   border: 2px dashed #434a56;
   border-radius: 4px;
 }
+
+/* p:nth-child(even) {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 2px dashed #434a56;
+  border-radius: 4px;
+} */
 
 /* :first-of-type selector */
 h1:first-of-type {
