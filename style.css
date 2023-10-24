@@ -14,7 +14,7 @@ body {
 
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
   font-size: 16px;
-  background-image: url("bg.gif");
+  background-image: url("jkdgqwiugg3jr23t.gif");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,6 +31,21 @@ body::before {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.page-wrapper .intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("bg.gif");
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  opacity: 1;
   z-index: -1;
 }
 
@@ -90,7 +105,8 @@ h1:first-of-type {
 }
 
 /* attribute selector */
-a[title] {
+a[title],
+a[href] {
   color: #61afef;
   text-decoration: none;
   transition: color 0.3s, text-shadow 0.3s;
@@ -246,12 +262,6 @@ nav li {
   margin-bottom: 0.5em;
 }
 
-/* design archives next button */
-li.next a {
-  font-weight: bold;
-  color: #cfc;
-}
-
 /* design selection links */
 .design-name {
   font-weight: bold;
@@ -260,3 +270,69 @@ li.next a {
 .designer-name {
   font-style: italic;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-out;
+}
+
+button:active,
+input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+a {
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.page-wrapper .intro,
+.benefits {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.page-wrapper .intro:hover,
+.benefits:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+h1,
+h2,
+h3 {
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+  color: #f4bf75;
+}
+
+.sidebar a {
+  transition: background-color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #fff;
+}
+
+footer a {
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* .parallax {
+  background-attachment: fixed;
+} */
