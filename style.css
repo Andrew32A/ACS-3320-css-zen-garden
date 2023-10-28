@@ -295,10 +295,15 @@ footer a:hover {
 nav ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 nav li {
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
+}
+
+.navigation {
+  grid-area: navigation;
 }
 
 .design-name {
@@ -319,7 +324,7 @@ nav li {
   text-shadow: 0 0 5px #ffffff;
 }
 
-/* list items */
+/* design list items */
 .design-selection ul {
   list-style-type: none;
   margin: 0;
@@ -354,9 +359,43 @@ nav li {
   color: #98c379;
 }
 
-/* hover effects */
 .design-name:hover,
 .designer-name:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* design archives and resources list styling */
+.design-archives ul,
+.zen-resources ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.design-archives li,
+.zen-resources li {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.design-archives li:hover,
+.zen-resources li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.design-archives a,
+.zen-resources a {
+  display: block;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.design-archives a:hover,
+.zen-resources a:hover {
   color: #fff;
   text-shadow: 0 0 5px #fff;
 }
@@ -370,20 +409,6 @@ nav li {
       "zen-resources";
     grid-template-columns: 1fr;
   }
-}
-
-/* navigation */
-.navigation {
-  grid-area: navigation;
-}
-
-nav ul {
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  margin-bottom: 0.5em;
 }
 
 /* ************ animations ************ */
