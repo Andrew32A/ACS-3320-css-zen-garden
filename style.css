@@ -272,6 +272,64 @@ footer a:hover {
   border-bottom: 1px solid #fff;
 }
 
+/* style for the grid items */
+.design-selection,
+.design-archives,
+.zen-resources {
+  background-color: rgba(40, 44, 52, 0.8);
+  border: 2px solid #434a56;
+  border-radius: 8px;
+  padding: 15px;
+  overflow: auto;
+}
+
+.design-selection h3,
+.design-archives h3,
+.zen-resources h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+.design-name {
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.design-name:hover {
+  color: #e06c75;
+}
+
+.designer-name {
+  font-style: italic;
+  color: #98c379;
+}
+
+.sidebar a:hover {
+  text-shadow: 0 0 5px #ffffff;
+}
+
+/* responsive design for smaller devices */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-areas:
+      "design-selection"
+      "design-archives"
+      "zen-resources";
+    grid-template-columns: 1fr;
+  }
+}
+
 /* navigation */
 .navigation {
   grid-area: navigation;
