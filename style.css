@@ -223,21 +223,35 @@ footer a:hover {
   color: #333;
 }
 
-/* sidebar */
+/* sidebar and grid at the bottom */
 .sidebar {
   background-color: #1c1c1c;
   padding: 1em;
 }
 
-.sidebar .wrapper {
+.wrapper {
   border: 2px solid #333;
   padding: 1em;
+
+  display: grid;
+  grid-gap: 15px;
+  grid-template-areas:
+    "design-selection design-archives"
+    "design-selection zen-resources";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.design-selection,
-.design-archives,
+.design-selection {
+  grid-area: design-selection;
+}
+
+.design-archives {
+  grid-area: design-archives;
+}
+
 .zen-resources {
-  margin-bottom: 2em;
+  grid-area: zen-resources;
 }
 
 .sidebar h3 {
@@ -259,6 +273,10 @@ footer a:hover {
 }
 
 /* navigation */
+.navigation {
+  grid-area: navigation;
+}
+
 nav ul {
   padding: 0;
   list-style: none;
