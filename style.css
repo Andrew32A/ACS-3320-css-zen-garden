@@ -319,6 +319,48 @@ nav li {
   text-shadow: 0 0 5px #ffffff;
 }
 
+/* list items */
+.design-selection ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.design-selection li {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.design-selection li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* design names */
+.design-name {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* designer names */
+.designer-name {
+  font-size: 0.9em;
+  font-weight: normal;
+  font-style: italic;
+  color: #98c379;
+}
+
+/* hover effects */
+.design-name:hover,
+.designer-name:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
 /* responsive design for smaller devices */
 @media (max-width: 768px) {
   .wrapper {
@@ -342,15 +384,6 @@ nav ul {
 
 nav li {
   margin-bottom: 0.5em;
-}
-
-/* design selection links */
-.design-name {
-  font-weight: bold;
-}
-
-.designer-name {
-  font-style: italic;
 }
 
 /* ************ animations ************ */
