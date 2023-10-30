@@ -149,8 +149,7 @@ h3 {
 /* hover pseudo-class selector */
 a:hover {
   text-decoration: underline;
-  color: #c678dd;
-  text-shadow: 0 0 8px #ffd700;
+  text-shadow: 0 0 8px #fff;
 }
 
 /* buttons */
@@ -169,7 +168,6 @@ input[type="submit"] {
 
 button:hover,
 input[type="submit"]:hover {
-  background-color: #56b6c2;
   transform: translateY(-2px);
 }
 
@@ -219,8 +217,7 @@ footer a {
 }
 
 footer a:hover {
-  background-color: #9cf;
-  color: #333;
+  color: #fff;
 }
 
 /* sidebar and grid at the bottom */
@@ -312,7 +309,7 @@ nav li {
 }
 
 .design-name:hover {
-  color: #e06c75;
+  color: #fff;
 }
 
 .designer-name {
@@ -453,16 +450,11 @@ h3 {
 h1:hover,
 h2:hover,
 h3:hover {
-  color: #f4bf75;
+  color: #fff;
 }
 
 .sidebar a {
   transition: background-color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
-}
-
-.sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid #fff;
 }
 
 footer a {
@@ -471,5 +463,4 @@ footer a {
 
 footer a:hover {
   color: #fff;
-  border-bottom: 1px solid #fff;
 }
